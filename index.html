@@ -20,6 +20,7 @@
         padding: 0;
         -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%;
+        min-height: 100vh;
       }
       table {
         border-collapse: separate;
@@ -143,6 +144,27 @@
       .powered-by a {
         color: #fff;
         text-decoration: underline;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #000000;
+        }
+        .container {
+          background-color: #ccc;
+        }
+        .wrapper {
+          background-color: #000;
+        }
+        p,
+        ul,
+        ol,
+        h1,
+        h2,
+        h3,
+        h4 {
+          color: #fff;
+        }
+        /* .main a { */
       }
     </style>
   </head>
