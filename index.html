@@ -140,20 +140,28 @@
         font-size: 14px;
         color: #a9aaec;
         margin-bottom: 5px;
+        text-align: center;
       }
       .powered-by a {
         color: #fff;
         text-decoration: underline;
       }
+      .dark-logo,
+      .dark-social {
+        display: none;
+      }
       @media (prefers-color-scheme: dark) {
         body {
-          background-color: #000000;
+          background-color: #282828;
         }
         .container {
-          background-color: #ccc;
+          background-color: #262524;
         }
         .wrapper {
-          background-color: #000;
+          background-color: #2c2b2a;
+        }
+        .footer {
+          background-color: #1c1c1c;
         }
         p,
         ul,
@@ -163,6 +171,23 @@
         h3,
         h4 {
           color: #fff;
+        }
+        .powered-by,
+        .powered-by a {
+          color: #808080;
+        }
+        .light-logo,
+        .light-social {
+          display: none;
+        }
+        .dark-logo,
+        .dark-social {
+          display: block;
+          text-align: center;
+          margin: 0 auto;
+        }
+        .dark-social {
+          margin-bottom: 20px;
         }
         /* .main a { */
       }
@@ -180,7 +205,10 @@
         <td>&nbsp;</td>
         <td class="container">
           <div class="content">
-            <div class="preheader"><img src="logo.png" /></div>
+            <div class="preheader">
+              <a href="#"><img src="logo.png" class="light-logo" /></a>
+              <a href="#"><img src="dark-logo.png" class="dark-logo" /></a>
+            </div>
             <table role="presentation" class="main">
               <tr>
                 <td class="wrapper">
@@ -219,24 +247,44 @@
               >
                 <tr>
                   <td class="content-block">
-                    <div class="social">
+                    <div class="social light-social">
                       <a href="#">
-                        <img src="01.png" />
+                        <img src="light-soical/01.png" />
                       </a>
                       <a href="#">
-                        <img src="02.png" />
+                        <img src="light-soical/02.png" />
                       </a>
                       <a href="#">
-                        <img src="03.png" />
+                        <img src="light-soical/03.png" />
                       </a>
                       <a href="#">
-                        <img src="04.png" />
+                        <img src="light-soical/04.png" />
                       </a>
                       <a href="#">
-                        <img src="05.png" />
+                        <img src="light-soical/05.png" />
                       </a>
                       <a href="#">
-                        <img src="06.png" />
+                        <img src="light-soical/06.png" />
+                      </a>
+                    </div>
+                    <div class="social dark-social">
+                      <a href="#">
+                        <img src="dark-social/01.png" />
+                      </a>
+                      <a href="#">
+                        <img src="dark-social/02.png" />
+                      </a>
+                      <a href="#">
+                        <img src="dark-social/03.png" />
+                      </a>
+                      <a href="#">
+                        <img src="dark-social/04.png" />
+                      </a>
+                      <a href="#">
+                        <img src="dark-social/05.png" />
+                      </a>
+                      <a href="#">
+                        <img src="dark-social/06.png" />
                       </a>
                     </div>
                   </td>
